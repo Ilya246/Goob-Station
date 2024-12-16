@@ -23,10 +23,13 @@
   slots:
     head:
       part: MouthArm
+      organs:
+        eyes: OrganAnimalEyes
     torso:
       part: TorsoAnimal
       connections:
       - tail
+      - head
       organs:
         lungs: OrganSpaceAnimalLungs # Immunity to airloss
         stomach: OrganAnimalStomach

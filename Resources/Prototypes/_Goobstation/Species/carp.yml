@@ -1,0 +1,33 @@
+- type: species
+  id: PlayerCarp
+  name: species-name-carp
+  roundStart: true
+  prototype: MobSpeciesCarp
+  sprites: MobPlayerCarpSprites
+  markingLimits: MobPlayerCarpMarkingLimits
+  dollPrototype: MobSpeciesCarpDummy
+  skinColoration: Hues
+  maleFirstNames: names_carp_first
+  femaleFirstNames: names_carp_first
+  lastNames: names_carp_last
+  sexes:
+  - Unsexed
+
+# The lack of a layer means that
+# this person cannot have round-start anything
+# applied to that layer. It has to instead
+# be defined as a 'custom base layer'
+# in either the mob's starting marking prototype,
+# or it has to be added in C#.
+- type: speciesBaseSprites
+  id: MobPlayerCarpSprites
+  sprites:
+    Tail: MobMonkeyTail
+    Eyes: MobMonkeyEyes
+
+- type: markingPoints
+  id: MobPlayerCarpMarkingLimits
+  points:
+    Tail:
+      points: 1
+      required: false

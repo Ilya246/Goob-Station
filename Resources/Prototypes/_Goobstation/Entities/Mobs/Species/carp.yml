@@ -1,9 +1,128 @@
 - type: entity
-  parent: [SimpleSpaceMobBase, FlyingMobBase, MobCombat, BaseMobSpeciesOrganic, MobCarp]
+  parent:
+    - FlyingMobBase
+    - BaseMob
+    - MobDamageable
+    - MobPolymorphable
+    - MobCombat
+    - StripableInventoryBase
   id: BaseMobSpeciesCarp
   name: Urist McFish
   abstract: true
   components:
+  # begin: adjusted BaseMobSpeciesOrganic
+  - type: StatusIcon
+    bounds: -0.5,-0.5,0.5,0.5
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
+  - type: FloorOcclusion
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MeatBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MeatLaserImpact
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - KnockedDown
+    - SlowedDown
+    - Stutter
+    - SeeingRainbows
+    - Electrocution
+    - Drunk
+    - SlurredSpeech
+    - RatvarianLanguage
+    - PressureImmunity
+    - Muted
+    - ForcedSleep
+    - TemporaryBlindness
+    - Pacified
+    - StaminaModifier
+    - Flashed
+    - RadiationProtection
+    - Drowsiness
+    - Vulgarity # Goobstation - add Profanol
+    - Adrenaline
+    - Brainrotted # Goobstation - skibidi rizz ohio update
+  - type: Identity
+  - type: IdExaminable
+  - type: Hands
+  - type: ComplexInteraction
+  - type: Internals
+  - type: FloatingVisuals
+  - type: Climbing
+  - type: Ensnareable
+    sprite: Objects/Misc/ensnare.rsi
+    state: icon
+  - type: AnimationPlayer
+  - type: Buckle
+  - type: CombatMode
+    canDisarm: true
+  - type: SleepEmitSound
+  - type: SSDIndicator
+  - type: StandingState
+  - type: Dna
+  - type: MindContainer
+    showExamineInfo: true
+  - type: CanEnterCryostorage
+  - type: CanHostGuardian
+  - type: Stripping
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      # Goobstation - changelings
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+      enum.HereticLivingHeartKey.Key: # goob edit - heretics
+        type: LivingHeartMenuBoundUserInterface
+      # Shitmed
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
+  - type: Puller
+  - type: DamageForceSay
+  - type: Vocal
+    sounds:
+      Male: MaleReptilian
+      Female: FemaleReptilian
+      Unsexed: MaleReptilian
+  - type: Emoting
+  - type: BodyEmotes
+    soundsId: GeneralBodyEmotes
+  - type: Grammar
+    attributes:
+      proper: true
+  - type: LayingDown # WD EDIT
+  - type: Targeting # Shitmed Change
+  - type: Absorbable # Goobstation - changelings
+  - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
+    allowedStates:
+    - Alive
+    damageCap: 20
+    damage:
+      types:
+        Heat: -0.07
+      groups:
+        Brute: -0.07
+  - type: Blindable
+  - type: Carriable # Goobstation
+  # end
+  # begin: adjusted SimpleSpaceMobBase
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+  - type: MobPrice
+    price: 1000 # Living critters are valuable in space.
+  - type: Perishable
+  # end
   - type: NpcFactionMember
     factions:
     - Dragon
@@ -60,20 +179,16 @@
     tags:
       - Carp
       - DoorBumpOpener
+      - CanPilot
+      - AnomalyHost
   - type: ReplacementAccent
     accent: genericAggressive
   - type: Speech
     speechVerb: LargeMob
   - type: InteractionPopup
     interactSuccessString: petting-success-carp
-    interactFailureString: petting-failure-carp
-    interactFailureSound:
-      path: /Audio/Effects/bite.ogg
+    successChance: 1
   - type: SurgeryTarget # Shitmed
-  - type: UserInterface # Shitmed
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
   - type: Hunger
   - type: Icon
     sprite: Mobs/Aliens/Carps/space.rsi
@@ -86,7 +201,7 @@
   - type: NoWieldNeeded
 
 - type: entity
-  parent: BaseSpeciesDummy
+  parent: BaseMobSpeciesCarp
   id: MobSpeciesCarpDummy
   categories: [ HideSpawnMenu ]
   components:
