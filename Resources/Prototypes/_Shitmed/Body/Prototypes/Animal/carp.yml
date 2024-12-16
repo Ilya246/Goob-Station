@@ -15,3 +15,23 @@
         kidneys: OrganAnimalKidneys
     tail:
       part: TailCarp
+
+- type: body
+  id: PlayerCarp
+  name: player carp
+  root: torso
+  slots:
+    head:
+      part: MouthArm
+    torso:
+      part: TorsoAnimal
+      connections:
+      - tail
+      organs:
+        lungs: OrganSpaceAnimalLungs # Immunity to airloss
+        stomach: OrganAnimalStomach
+        liver: OrganAnimalLiver
+        heart: OrganSpaceAnimalHeart # Immunity to cold
+        kidneys: OrganAnimalKidneys
+    tail:
+      part: TailCarp
