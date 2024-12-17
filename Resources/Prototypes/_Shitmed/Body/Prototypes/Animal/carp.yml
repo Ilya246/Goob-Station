@@ -21,15 +21,11 @@
   name: player carp
   root: torso
   slots:
-    head:
-      part: MouthArm
-      organs:
-        eyes: OrganAnimalEyes
     torso:
       part: TorsoAnimal
       connections:
       - tail
-      - head
+      - hand_head
       organs:
         lungs: OrganSpaceAnimalLungs # Immunity to airloss
         stomach: OrganAnimalStomach
@@ -38,3 +34,7 @@
         kidneys: OrganAnimalKidneys
     tail:
       part: TailCarp
+    hand_head:
+      part: MouthArm
+      organs:
+        eyes: OrganAnimalEyes
