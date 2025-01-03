@@ -198,6 +198,32 @@
     prototype: PlayerCarp
   - type: Inventory
     templateId: carp
+    displacements:
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _Goobstation/Mobs/Species/Carp/displacement.rsi
+            state: eyes
+      #head:
+      #  sizeMaps:
+      #    32:
+      #      sprite: _Goobstation/Mobs/Species/Carp/displacement.rsi
+      #      state: head
+      #mask:
+      #  sizeMaps:
+      #    32:
+      #      sprite: _Goobstation/Mobs/Species/Carp/displacement.rsi
+      #      state: mask
+      #suitstorage:
+      #  sizeMaps:
+      #    32:
+      #      sprite: _Goobstation/Mobs/Species/Carp/displacement.rsi
+      #      state: suitstorage
+      #neck:
+      #  sizeMaps:
+      #    32:
+      #      sprite: _Goobstation/Mobs/Species/Carp/displacement.rsi
+      #      state: neck
   - type: NoWieldNeeded
 
 - type: entity
