@@ -299,6 +299,8 @@
     alternateState: Standing
   - type: Carriable # Goobstation
   - type: CPRTraining # Goobstation - Just give to everyone! This ain't MRP.
+  - type: DiseaseCarrier # Goobstation
+  - type: Immunity # Goobstation
 
 - type: entity
   save: false
