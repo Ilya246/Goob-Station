@@ -40,23 +40,23 @@ public partial class SharedDiseaseSystem
         if (power < 0 || chance < 0)
             return;
 
-        if (_random.Prob(power * chance))
+        if (!_random.Prob(power * chance))
+            return;
+
+        var infectDisease = disease;
+        EntityUid? newDisease = null;
+        if (clone)
         {
-            var infectDisease = disease;
-            EntityUid? newDisease = null;
-            if (clone)
-            {
-                newDisease = TryClone(disease, diseaseComp);
-                if (newDisease == null)
-                    return;
+            newDisease = TryClone(disease, diseaseComp);
+            if (newDisease == null)
+                return;
 
-                MutateDisease(newDisease.Value);
-                infectDisease = newDisease.Value;
-            }
-
-            if (!TryInfect(target, infectDisease) && newDisease != null)
-                QueueDel(newDisease);
+            MutateDisease(newDisease.Value);
+            infectDisease = newDisease.Value;
         }
+
+        if (!TryInfect(target, infectDisease) && newDisease != null)
+            QueueDel(newDisease);
     }
 
     public void MutateDisease(EntityUid uid, DiseaseComponent? disease = null)

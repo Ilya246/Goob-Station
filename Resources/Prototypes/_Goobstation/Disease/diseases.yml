@@ -1,5 +1,6 @@
 # used for disease spread
 - type: entity
+  abstract: true
   id: DiseaseBase
   components:
   - type: Disease
