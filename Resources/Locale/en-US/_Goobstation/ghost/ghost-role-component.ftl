@@ -46,6 +46,8 @@ ghost-role-information-diplomat-name = Diplomat
 ghost-role-information-diplomat-description = Represent Central Command, managing relationships with other factions aboard the station. Cleanup the issues the captain has likely caused.
 
 ghost-role-information-sentient-shark-name = Sentient Sharkminnow
+ghost-role-information-plague-mouse-name = Plague Mouse
+ghost-role-information-plague-mouse-description = A hungry and mischievous mouse. This one carries a disease and will spread it on bite.
 
 # Half Life
 
