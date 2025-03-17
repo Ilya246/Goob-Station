@@ -32,12 +32,9 @@
       Mess: 10 # there's 15 morbillion mice usually and they're easy to kill
   - type: VentCrittersRule
     entries:
-    - id: MobMouse
-      prob: 0.02
-    - id: MobMouse1
-      prob: 0.02
-    - id: MobMouse2
-      prob: 0.02
+    # Goobstation
+    - id: SpawnMobMouse
+      prob: 0.06
     - id: MobMouseCancer
       prob: 0.001
 # Events always spawn a critter regardless of Probability https://github.com/space-wizards/space-station-14/issues/28480 I added the Rat King to their own event with a player cap.
@@ -59,14 +56,9 @@
       Hostile: 1 # low chance to spawn rat king
   - type: VentCrittersRule
     entries:
-    - id: MobMouse
-      prob: 0.02
-    - id: MobMouse1
-      prob: 0.02
-    - id: MobMouse2
-      prob: 0.02
-    - id: MobMousePlague # Goobstation
-      prob: 0.003 # 1/20 of normal mouse chance
+    # Goobstation
+    - id: SpawnMobMouse
+      prob: 0.06
     - id: MobMouseCancer
       prob: 0.001
     - id: MobLootbug # Goobstation

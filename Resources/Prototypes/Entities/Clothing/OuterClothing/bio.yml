@@ -12,7 +12,20 @@
   - type: Armor
     modifiers:
       coefficients:
+        # cosmetic resistances
+        Slash: 0.95
+        Piercing: 0.95
         Caustic: 0.5
+      flatReductions:
+        Slash: 1 # mice trolled
+  # Goobstation
+  - type: DiseaseProtection
+    # full prot
+    incoming:
+      powerModifiers:
+        Blood: -1 # immune to plague mice
+      chanceMultipliers:
+        Blood: 0.5
 
 - type: entity
   parent: ClothingOuterBioGeneral

@@ -1838,7 +1838,7 @@
     deactivateSound: null
   - type: EggLayer
     eggSpawn:
-    - id: MobMouse
+    - id: SpawnMobMouse
     hungerUsage: 20
     eggLayAction: MouseMultiply
     hungerRequired: true
@@ -1859,6 +1859,14 @@
   - type: Stamina
     critThreshold: 20
   - type: LayingDown
+  # does not infect you unless the mouse has any diseases, which it doesn't by default
+  - type: DiseaseOnHit
+    spreadParams:
+      chance: 0.05 # 1984 lower chance for normal mice so creating the turboplague horde is not as strong
+      power: 1
+      spreadType: Blood
+  - type: DiseaseCarrier
+    effectImmune: true
   # </Goobstation>
 
 - type: entity
