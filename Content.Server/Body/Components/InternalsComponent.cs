@@ -90,6 +90,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Alert;
+using Content.Shared.Disease; // Goobstation
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.Body.Components
@@ -115,6 +116,11 @@ namespace Content.Server.Body.Components
 
         [DataField]
         public ProtoId<AlertPrototype> InternalsAlert = "Internals";
+
+        // <Goobstation>
+        [DataField]
+        public DiseaseSpreadModifier IncomingInfectionModifier = new() { PowerModifiers = new() { { "Aerial", -1f } } };
+        // </Goobstation>
     }
 
 }
