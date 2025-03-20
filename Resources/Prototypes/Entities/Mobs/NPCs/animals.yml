@@ -2147,6 +2147,7 @@
       spreadType: Blood
   - type: DiseaseCarrier
     effectImmune: true
+  - type: ShowDiseaseIcons # they sense it
   # </Goobstation>
 
 - type: entity
