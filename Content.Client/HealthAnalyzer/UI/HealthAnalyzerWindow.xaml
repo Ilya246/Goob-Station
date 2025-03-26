@@ -232,6 +232,18 @@
                 Orientation="Vertical">
             </BoxContainer>
 
+            <!-- Goobstation Change -->
+            <PanelContainer Name="DiseasesDivider"
+                            Visible="False"
+                            StyleClasses="LowDivider"/>
+
+            <BoxContainer Name="DiseasesContainer"
+                          Visible="False"
+                          Margin="0 5"
+                          Orientation="Vertical">
+            </BoxContainer>
+            <!-- Goobstation Change End -->
+
         </BoxContainer>
     </ScrollContainer>
 </controls:FancyWindow>
