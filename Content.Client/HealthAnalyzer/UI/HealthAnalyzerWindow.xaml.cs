@@ -21,7 +21,7 @@ using Robust.Client.ResourceManagement;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-using Content.Shared.Disease; // Goobstation
+using Content.Goobstation.Shared.Disease; // Goobstation
 
 namespace Content.Client.HealthAnalyzer.UI
 {

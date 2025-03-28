@@ -1,5 +1,5 @@
 using Content.Shared.Alert;
-using Content.Shared.Disease; // Goobstation
+using Content.Goobstation.Shared.Disease; // Goobstation
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.Body.Components
