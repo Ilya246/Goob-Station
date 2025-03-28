@@ -13,3 +13,15 @@
         Steel: 5
         Gold: 5
         BSCrystal: 5
+
+- type: entity
+  id: VirologyServerMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: virology server machine board
+  description: A machine printed circuit board for a virology server.
+  components:
+    - type: MachineBoard
+      prototype: VirologyServer
+      stackRequirements:
+        Steel: 1
+        Cable: 2
