@@ -39,4 +39,8 @@ loadout-group-security-neck = Security neck
 
 loadout-group-captain-mask = Captain Mask
 
-
+# Virology
+loadout-group-virologist-jumpsuit = Virologist jumpsuit
+loadout-group-virologist-backpack = Virologist shoes
+loadout-group-virologist-outerclothing = Virologist outer clothing
+loadout-group-virologist-id = Virologist ID
