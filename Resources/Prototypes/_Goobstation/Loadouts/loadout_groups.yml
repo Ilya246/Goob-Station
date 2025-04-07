@@ -238,7 +238,7 @@
 
 - type: loadoutGroup
   id: VirologistJumpsuit
-  name: loadout-group-scientist-jumpsuit
+  name: loadout-group-virologist-jumpsuit
   loadouts:
    - VirologistJumpsuit
    - VirologistJumpskirt
@@ -246,7 +246,7 @@
 
 - type: loadoutGroup
   id: VirologistBackpack
-  name: loadout-group-scientist-backpack
+  name: loadout-group-virologist-backpack
   loadouts:
    - VirologistBackpack
    - VirologistSatchel
@@ -254,8 +254,14 @@
 
 - type: loadoutGroup
   id: VirologistOuterClothing
-  name: loadout-group-scientist-outerclothing
+  name: loadout-group-virologist-outerclothing
   minLimit: 0
   loadouts:
    - VirologistLabCoat
    - VirologistWintercoat
+
+- type: loadoutGroup
+  id: VirologistPDA
+  name: loadout-group-virologist-id
+  loadouts:
+   - VirologistPDA

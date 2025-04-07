@@ -73,7 +73,7 @@ using Content.Shared.Atmos;
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
-using Content.Shared.Disease; // Goobstation - viro
+using Content.Goobstation.Shared.Disease; // Goobstation
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
@@ -90,7 +90,6 @@ using Robust.Client.ResourceManagement;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-<<<<<<< HEAD
 // Shitmed Change
 using Content.Shared._Shitmed.Targeting;
 using Content.Shared._Shitmed.Medical.HealthAnalyzer;
@@ -101,9 +100,6 @@ using Content.Shared.Body.Part;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
 using System.Globalization;
-=======
-using Content.Goobstation.Shared.Disease; // Goobstation
->>>>>>> 1efcfb1251 (try goobmodding)
 
 namespace Content.Client.HealthAnalyzer.UI
 {
