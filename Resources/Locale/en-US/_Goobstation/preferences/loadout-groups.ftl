@@ -42,3 +42,9 @@ loadout-group-captain-mask = Captain Mask
 loadout-group-salvage-specialist-neck = Salvage Specialist neck
 
 loadout-group-chemist-head = Chemist head
+
+# Virology
+loadout-group-virologist-jumpsuit = Virologist jumpsuit
+loadout-group-virologist-backpack = Virologist shoes
+loadout-group-virologist-outerclothing = Virologist outer clothing
+loadout-group-virologist-id = Virologist ID
