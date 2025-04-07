@@ -10,3 +10,7 @@ job-description-navy-special-operations-officer = Send, brief, and direct emerge
 
 job-description-gman = Well, well, isn't this just like old times.
 job-description-hecu = Fufill the orders of your supervisor, no matter the morales.
+
+
+# Viro
+job-description-virologist = Study spreading viruses, produce cures for ailing crewmembers, experiment in creating beneficial viruses. Make sure pandemics don't spread.

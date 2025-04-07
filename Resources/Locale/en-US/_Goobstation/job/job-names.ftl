@@ -5,6 +5,7 @@ job-name-bs = Blueshield
 job-name-overall = Overall
 
 job-name-exec = Executive Access
+job-name-virologist = Virologist
 
 # Navy Stuff
 
@@ -28,3 +29,4 @@ JobNavyOfficerUndercover = Undercover Navy Officer
 JobNavyCaptain = Navy Captain
 JobDiplomat = Diplomat
 JobGovernmentMan = The G-Man
+JobVirologist = Virologist
