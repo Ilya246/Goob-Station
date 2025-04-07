@@ -25,3 +25,6 @@ job-description-hecu = Fufill the orders of your supervisor, no matter the moral
 # Misc
 
 job-description-conquest = Stand ready for my arrival, worm.
+
+# Viro
+job-description-virologist = Study spreading viruses, produce cures for ailing crewmembers, experiment in creating beneficial viruses. Make sure pandemics don't spread.
