@@ -1695,6 +1695,7 @@
       Female: MonkeyMode
       Unsexed: MonkeyMode
     wilhelmProbability: 0.001
+  - type: DiseaseCarrier # Goobstation
 
 
 
